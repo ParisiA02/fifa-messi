@@ -17,7 +17,7 @@
 .player-card{
     height: 100%;
     width: 300px;
-    background-color: #d8d8d8;
+    background-color: #2B2936;
 }
 
 .player-card-text{
@@ -72,7 +72,7 @@
     
     background-color: #181648;
     display: flex;
-    color: #6B6A7E;
+    color: #d8d8d8;
 }
 
 .player-stats-column .column{
