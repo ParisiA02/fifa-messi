@@ -14,7 +14,6 @@
 
 .player-card{
     height: 100%;
-    width: 300px;
     background-color: #2B2936;
 }
 
@@ -227,4 +226,62 @@
        linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
             mask-composite: exclude;
+  }
+
+
+  
+  @media all and (min-width:0px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .player-stats-column{
+        width: 100%;
+    }
+    .player-stats{
+        width: 100%;
+        min-width: 300px
+    }
+    .player-card{
+        width: 100%;
+        min-width: 300px
+    }
+  } 
+  @media all and (min-width:1000px){
+    
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .player-stats-column{
+        width: calc(100%/2);
+    }
+  } 
+  @media all and (min-width:1310px){
+    .container{
+        height: 400px;
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: row;
+        color: white;
+    }
+
+    .player-stats-detailed{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .player-stats-column{
+        width: calc(100%/3);
+        min-width: 250px;
+        
+        background-color: #181648;
+        display: flex;
+        color: #d8d8d8;
+    }
+    .player-card{
+        width: 300px;
+    }
   }
